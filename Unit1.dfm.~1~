@@ -1,0 +1,119 @@
+object Form1: TForm1
+  Left = 206
+  Top = 142
+  Width = 696
+  Height = 486
+  Caption = 'S.P.D.  Sistema de Pontua'#231#227'o Docente'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  Menu = MainMenu1
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object MainMenu1: TMainMenu
+    Left = 8
+    Top = 400
+    object Cadastro1: TMenuItem
+      Caption = 'Cadastro'
+      object Professores1: TMenuItem
+        Caption = 'Professores'
+        OnClick = Professores1Click
+      end
+      object Pontuao1: TMenuItem
+        Caption = 'Pontua'#231#227'o'
+        object Grupo11: TMenuItem
+          Caption = 'Grupo1-Atualiza'#231#227'o/Titula'#231#227'o'
+          OnClick = Grupo11Click
+        end
+        object Grupo21: TMenuItem
+          Caption = 'Grupo2-Produ'#231#227'o Academica'
+          OnClick = Grupo21Click
+        end
+        object Grupo31: TMenuItem
+          Caption = 'Grupo3-Experiencia Profissional'
+          OnClick = Grupo31Click
+        end
+        object Grupo41: TMenuItem
+          Caption = 'Grupo4-Assiduidade/Pontualidade'
+          OnClick = Grupo41Click
+        end
+        object PontuaoFinal1: TMenuItem
+          Caption = 'Pontua'#231#227'o Final'
+          OnClick = PontuaoFinal1Click
+        end
+      end
+    end
+    object Consultas1: TMenuItem
+      Caption = 'Consultas'
+      object Professores3: TMenuItem
+        Caption = 'Professores'
+        OnClick = Professores3Click
+      end
+      object Pontuao3: TMenuItem
+        Caption = 'Pontua'#231#227'o'
+        object Grupo1AtualizaoTitulao1: TMenuItem
+          Caption = 'Grupo1-Atualiza'#231#227'o/Titula'#231#227'o'
+          OnClick = Grupo1AtualizaoTitulao1Click
+        end
+        object Grupo2ProduoAcademica1: TMenuItem
+          Caption = 'Grupo2-Produ'#231#227'o Academica'
+          OnClick = Grupo2ProduoAcademica1Click
+        end
+        object Grupo3ExperienciaProfissional1: TMenuItem
+          Caption = 'Grupo3-Experiencia Profissional'
+          OnClick = Grupo3ExperienciaProfissional1Click
+        end
+        object Grupo4AssiduidadePontualidade1: TMenuItem
+          Caption = 'Grupo4-Assiduidade/Pontualidade'
+          OnClick = Grupo4AssiduidadePontualidade1Click
+        end
+      end
+    end
+    object Relatrio1: TMenuItem
+      Caption = 'Relat'#243'rio'
+      object professores2: TMenuItem
+        Caption = 'Professores'
+        OnClick = professores2Click
+      end
+      object Pontuao2: TMenuItem
+        Caption = 'Pontua'#231#227'o docente'
+        OnClick = Pontuao2Click
+      end
+    end
+    object Sair1: TMenuItem
+      Caption = 'Sair'
+      OnClick = Sair1Click
+    end
+  end
+  object RvProject1: TRvProject
+    Left = 24
+    Top = 312
+  end
+  object RvTableProfessores: TRvTableConnection
+    RuntimeVisibility = rtDeveloper
+    Table = DataAvaliacao.TbProfessores
+    Left = 56
+    Top = 312
+  end
+  object RvTableConnection1: TRvTableConnection
+    RuntimeVisibility = rtDeveloper
+    Table = DataAvaliacao.TbTitulacao
+    Left = 56
+    Top = 272
+  end
+  object RvProject2: TRvProject
+    ProjectFile = 'C:\Documents and Settings\-\Desktop\Avaliacao\Project2.rav'
+    Left = 600
+    Top = 352
+  end
+  object RvQueryConnection1: TRvQueryConnection
+    RuntimeVisibility = rtDeveloper
+    Query = DataAvaliacao.Query2
+    Left = 640
+    Top = 352
+  end
+end
